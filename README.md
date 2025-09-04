@@ -51,6 +51,8 @@ Difference between intent and pending intents?
 Parcelable is from Android, Serializable is from Java Kotlin. 
 Parcelable does not use reflection, Serializable does use it. 
 
+3. What are handler in android? help in sending messages or runnables from a background thread to‬ the main (UI) thread.‬
+
 ## 2. Kotlin basics
 
 - What are Any, Unit and Nothing types in Kotlin?
@@ -74,7 +76,18 @@ public inline fun TODO(): Nothing = throw NotImplementedError()
 - What are descrutturing declarations?
 
 
+- 4) What is a‬‭ data class‬‭ in Kotlin?‬
+‭ A‬‭ data class‬‭ is a special class made specifically‬‭ for storing data. It‬ automatically gives you useful methods like:‬
+   1. toString()‬‭ – so you can print the object easily‬
+   2. equals()‬‭ and‬‭ hashCode()‬‭ – to compare objects or use in HashMap/Set‬
+   3. copy()‬‭ – to create a new object with some properties‬‭ changed‬
+   4. ‭ componentN()‬‭ – to access values using destructuring‬‭ (like‬‭ val (a, b) = obj‬‭ )‬
 
+‭ Syntax:‬
+```kotlin
+‭ data‬‭ class‬‭ User‬‭ (‬‭val‬‭ name: String,‬‭ val‬‭ age: Int)‬
+```
+‭[Android Developer Handook by Anand Gaur]
 
 ## 4. Data Structures
 
