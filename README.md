@@ -14,6 +14,7 @@ This information comes from real Android interview questions and information of 
 5. OOP principles
 6. Design Patters
 7. Coroutines
+8. Jetpack Compose
 9. Networking protocols
 10. Android Security 
 11. Sensors
@@ -64,10 +65,15 @@ The source code of TODO function uses Nothing
 @kotlin.internal.InlineOnly
 public inline fun TODO(): Nothing = throw NotImplementedError()
 ```
+- Difference between lateinit and lazy?  lateinit is used with var variables to initialize the object later. Lazy is used with constants to initialize the variables on the first access.
+- 
+- What is inline, crossline, no-inline?
 
-- What is inline, crossline,
+- How to make the generated equals methods of a data classs only takes some arguments instead of all?
 
-- Who to make the generated equals methods of a data classs only takes some arguments instead of all?
+- What are descrutturing declarations?
+
+
 
 
 ## 4. Data Structures
@@ -90,6 +96,14 @@ Structural, main concept is Relationship. Recycler view uses `Adapter` design pa
 
 - 
 
+ ## 8. Jetpack compose
+
+ - What is the difference between jetpack compose and view system?
+   Jetpack compose is declarative meaning you don't have to manually handle the state of the elements, view system is imperative, meaning you have to worry about updating the state manually.
+ - Explain mutableStateOf: used to manage state, when the state change a recomposition is triggered
+ - Explain remember: used to store the variables state across multiple recompositions
+ - What is the lyfecycle of a compose function? composition -> layour -> drawing 
+ - Side Effects: is an action that "scapes" the scope of a composable function.
 
  ## 8. Networking protocols
 
@@ -97,6 +111,9 @@ Structural, main concept is Relationship. Recycler view uses `Adapter` design pa
  - What are web sockets, http, rpc
 
 ## 9. App security
+
+- Symmetric vs asymmetric encription? Symmetric is one key for everything. Assymetric uses public and private keys. 
+- 
 
 
 
