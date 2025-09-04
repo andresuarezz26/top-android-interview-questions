@@ -94,7 +94,11 @@ Structural, main concept is Relationship. Recycler view uses `Adapter` design pa
 
 - When you run the cancel method of a job, does the job is cancelled inmediatly?
 
-- 
+- What are dispatchers? Whare are the different types of dispatchers? 
+These tell the coroutine which thread or thread pool to run on.
+   1. Dispatchers.Main: For tasks that update the UI (Main thread).
+   2. Dispatchers.IO: For network or disk operations (I/O).
+   3. Dispatchers.Default: For CPU-intensive work, like sorting a large list.
 
  ## 8. Jetpack compose
 
@@ -102,8 +106,15 @@ Structural, main concept is Relationship. Recycler view uses `Adapter` design pa
    Jetpack compose is declarative meaning you don't have to manually handle the state of the elements, view system is imperative, meaning you have to worry about updating the state manually.
  - Explain mutableStateOf: used to manage state, when the state change a recomposition is triggered
  - Explain remember: used to store the variables state across multiple recompositions
- - What is the lyfecycle of a compose function? composition -> layour -> drawing 
+ - What is the lyfecycle of a compose function? composition -> layour -> drawing
+   
  - Side Effects: is an action that "scapes" the scope of a composable function.
+   Examples:
+   1. LaunchedEffect: run a suspend function in the scope of a composable
+   2. SideEffect: run after every recomposition
+   3. DisposableEffect: when need to perform clean ups. 
+   
+   
 
  ## 8. Networking protocols
 
