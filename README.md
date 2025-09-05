@@ -42,9 +42,16 @@ Activity, Service, BraodcastReceiver, ContentProvider.
 
 Activity lyfecycle? 
 
+What happens with the Activity when there are configuration changes?
+
+How Viewmodels can retain data even if activity is re created?
+
 How to communicate fragments? What are the restrictions of each approach? 
 
 Difference between intent and pending intents?
+
+How to optimize a recycler View? 
+While you have experience with RecyclerView, optimizing its performance is essential for complex UIs. Consider exploring techniques such as enabling setHasFixedSize(true), using ViewHolder patterns, and employing DiffUtil for efficient item updates. Investigating the impact of different LayoutManagers on performance could also be beneficial.
 
 **2. Serializable vs Parcelable**
 
