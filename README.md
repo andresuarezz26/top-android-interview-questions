@@ -76,8 +76,8 @@ public inline fun TODO(): Nothing = throw NotImplementedError()
 - What are descrutturing declarations?
 
 
-- 4) What is a‬‭ data class‬‭ in Kotlin?‬
-‭ A‬‭ data class‬‭ is a special class made specifically‬‭ for storing data. It‬ automatically gives you useful methods like:‬
+- What is a‬‭ data class‬‭ in Kotlin?‬
+  A‬‭ data class‬‭ is a special class made specifically‬‭ for storing data. It‬ automatically gives you useful methods like:‬
    1. toString()‬‭ – so you can print the object easily‬
    2. equals()‬‭ and‬‭ hashCode()‬‭ – to compare objects or use in HashMap/Set‬
    3. copy()‬‭ – to create a new object with some properties‬‭ changed‬
@@ -88,6 +88,47 @@ public inline fun TODO(): Nothing = throw NotImplementedError()
 ‭ data‬‭ class‬‭ User‬‭ (‬‭val‬‭ name: String,‬‭ val‬‭ age: Int)‬
 ```
 ‭[Android Developer Handook by Anand Gaur]
+
+- What are `inline` Functions in Kotlin?‬
+  ‭ An‬‭ inline function‬‭ in Kotlin is a function where the‬‭ compiler copies the function‬ body directly to the places where it's called‬‭ , instead‬‭ of calling the function in the‬
+‭ traditional way. This can‬‭ improve performance‬‭ , especially when‬‭ using higher-order‬ functions‬‭ (functions that take other functions as‬‭ parameters).‬
+‭ Why Use Inline Functions?‬
+
+‭ Normally, passing a function (lambda) creates an‬‭ object‬‭ and adds some‬‭ runtime‬ overhead‬‭ . Using‬‭ inline‬‭ tells the compiler to‬‭ avoid‬‭ creating the function object‬‭ and‬ instead‬‭ insert the lambda code directly‬‭ — making it‬‭ faster‬‭ and‬‭ more efficient‬‭ .‬
+‭
+‭‭[Android Developer Handook by Anand Gaur]
+‭
+
+
+- ‬ What is‬‭ `noinline`‬‭ in Kotlin?‬
+‭ In Kotlin, the‬‭ noinline‬‭ keyword is used inside an‬‭ inline‬‭ function to prevent‬ specific lambda parameters from being inlined.‬
+
+
+‭ When you mark a function as‬‭ inline‬‭ , all lambdas passed to it are normally inlined‬ (code is copied). But sometimes, you don’t want to inline certain lambdas. 
+ For‬ example, if you need to:‬
+● Store the lambda in a variable‬
+● Pass it to another function‬
+● Return it from the function
+
+- ‬What is the use of the‬‭ `reified`‬‭ modifier in Kotlin?‬
+‭ In Kotlin, the‬‭ reified‬‭ modifier is used with type parameters inside inline functions to‬
+‭ make the actual type available at runtime. Normally, type information is erased at‬
+‭ runtime (called type erasure), but‬‭ reified‬‭ helps retain‬‭ it for certain cases like‬
+‭ reflection or type checks.‬
+‭ Key Benefits‬
+‭ Created by Anand Gaur
+‬
+‭ Type Checks:‬‭ You can use‬‭ is‬‭ ,‬‭ as‬‭ , and‬‭ ::class‬‭ with‬‭ generic types.‬
+‭ Reflection:‬‭ Get class metadata like‬‭ T::class.java‬‭ ,‬‭ T::class.simpleName‬‭ , etc.‬
+‭ Clean Code:‬‭ Avoids boilerplate and workarounds for‬‭ passing‬‭ Class<T>‬‭ manually.‬
+‭
+‭
+‭
+‭
+‭
+‭
+‭
+‭
 
 ## 4. Data Structures
 
