@@ -7,6 +7,7 @@ This information comes from real Android interview questions and information of 
 
 ## Summary
 
+0. What to expect in a Android interview?
 1. Android Fundamentals
 2. Java basics 
 3. Kotlin basics
@@ -19,6 +20,25 @@ This information comes from real Android interview questions and information of 
 10. Android Security 
 11. Sensors
 12. Architecture
+13. How to contribute?
+
+
+### 0. What to expect in an Android interview?
+
+Companies has different ways of hiring Android developers, depending on the size of the company you can have an idea of what would you be asked. 
+
+For big companies (not FAANG or similar): 
+
+- Conceptual Android interview: this is the focus on this post. This is a 1 hour interview where the interviewer will ask you about general concepts from the foundaments of programming, languages (java and kotlin), android, architecture or security. Prepare this interview is tricky because you will need to know about many topics, some maybe many theorical stuff that you don't use in your day to day. So the goal of this repo is give you a guide of many of the questions that will be asked to you in this interview.
+- Practical excercise in the middle of the interview: sometimes the interviewer wants to know your coding habilities, so the interviewer gonna give you an small excercise, sometimes this is from one of the easiest leetcode excercise as revert a list, find duplicates or the type of excerices about refactoring. 
+
+For FAANG and similar companies (Google, Facebook, Uber, Apple, Miscrosoft, Pinterest ...): 
+- The process vary a little between companies but you can expect:
+1. Live coding: Between 1 and 3 rounds of live coding with leeetcode type problems
+2. Desygn system: 1 round for desygn a system, where the focus is design an Android application that supports millions of users. Check this post to get more info: [(mobile desygn interview), https://gerardosuarezm.medium.com/gathering-requirements-for-a-system-mobile-interview-9019f5f1d79a]
+3. Android practical interview: this is optional, some companies does and others not, but in this case you will need to code live an Android Application in an environment similar that you will work on in your day to day.
+
+
 
 
 ### 1. Android Fundamentals
@@ -195,8 +215,10 @@ These tell the coroutine which thread or thread pool to run on.
 - Symmetric vs asymmetric encription? Symmetric is one key for everything. Assymetric uses public and private keys. 
 - 
 
-
-
 ## 10. Sensors
 
-- What is the difference between bluethoot 
+- What is the difference between bluethoot
+
+## 13. How to contribute?
+
+You can suggest questions, topics or even create a pull request to submit any questions and answers. If you want to submit a PR make sure the question is not already covered in the other questions and that you use a clear language. Also make sure you are giving an accurate answer to the question.
