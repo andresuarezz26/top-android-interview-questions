@@ -18,6 +18,7 @@ This information comes from real Android interview questions and information of 
 9. Networking protocols
 10. Android Security 
 11. Sensors
+12. Architecture
 
 
 ### 1. Android Fundamentals
@@ -59,6 +60,20 @@ Parcelable is from Android, Serializable is from Java Kotlin.
 Parcelable does not use reflection, Serializable does use it. 
 
 3. What are handler in android? help in sending messages or runnables from a background thread to‬ the main (UI) thread.‬
+
+## 2. Kotlin basics
+
+- What is the difference between declaring: 
+
+```
+// Option A 
+String text = "hello"
+
+// Option B
+String text = new String("hello")
+```
+
+This question is related to how the String class is designed on Java. 
 
 ## 2. Kotlin basics
 
@@ -128,14 +143,7 @@ public inline fun TODO(): Nothing = throw NotImplementedError()
 ‭ Type Checks:‬‭ You can use‬‭ is‬‭ ,‬‭ as‬‭ , and‬‭ ::class‬‭ with‬‭ generic types.‬
 ‭ Reflection:‬‭ Get class metadata like‬‭ T::class.java‬‭ ,‬‭ T::class.simpleName‬‭ , etc.‬
 ‭ Clean Code:‬‭ Avoids boilerplate and workarounds for‬‭ passing‬‭ Class<T>‬‭ manually.‬
-‭
-‭
-‭
-‭
-‭
-‭
-‭
-‭
+
 
 ## 4. Data Structures
 
