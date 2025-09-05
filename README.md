@@ -1,6 +1,6 @@
 # Android Interview Question for your next interview
 
-Recopilatory of theorical Android interview questions, answers, youtube videos, post and github repos related capturing the concepts of every Android Dev must know for an interview. 
+Recopilatory of Android interview that potentially can be asked in an interview. This repo contains a mix of basic and tricky questions. 
 
 This information comes from real Android interview questions and information of interviews published in the web. 
 
